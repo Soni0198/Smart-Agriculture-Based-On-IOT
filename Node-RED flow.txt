@@ -1,0 +1,744 @@
+[
+    {
+        "id": "8c61916.db1747",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "426b4678.aac5b8",
+        "type": "tab",
+        "label": "Smart Agriculture System",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "c4a77014.98061",
+        "type": "tab",
+        "label": "Flow 3",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "54a3f96c.f55828",
+        "type": "ibmiot",
+        "z": "",
+        "name": "sss",
+        "keepalive": "60",
+        "serverName": "",
+        "cleansession": true,
+        "appId": "",
+        "shared": false
+    },
+    {
+        "id": "8defc437.30f768",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#11495f",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "Lucida Sans Unicode,Lucida Grande,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e82ab008.91898",
+        "type": "ui_group",
+        "z": "",
+        "name": "Soil Moisture",
+        "tab": "119bf4e6.a608eb",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "5b336ef3.f96a9",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Smart Agriculture",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "5e5c14.cd04e3ec",
+        "type": "ui_group",
+        "z": "",
+        "name": "API Data",
+        "tab": "5b336ef3.f96a9",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "8cc3f6d4.772218",
+        "type": "ui_group",
+        "z": "",
+        "name": "Motor Controls",
+        "tab": "5b336ef3.f96a9",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "6240558a.21d96c",
+        "type": "ui_group",
+        "z": "",
+        "name": "Agriculture Field Conditions",
+        "tab": "5b336ef3.f96a9",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "59c478c4.bbfad8",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Temperature",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "119bf4e6.a608eb",
+        "type": "ui_tab",
+        "z": "",
+        "name": "Graphical Representation",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7c85b655.6bdb38",
+        "type": "ibmiot in",
+        "z": "426b4678.aac5b8",
+        "authentication": "apiKey",
+        "apiKey": "54a3f96c.f55828",
+        "inputType": "evt",
+        "logicalInterface": "",
+        "ruleId": "",
+        "deviceId": "sss1234",
+        "applicationId": "",
+        "deviceType": "sss1234",
+        "eventType": "+",
+        "commandType": "",
+        "format": "json",
+        "name": "IBM IoT input",
+        "service": "registered",
+        "allDevices": "",
+        "allApplications": "",
+        "allDeviceTypes": false,
+        "allLogicalInterfaces": false,
+        "allEvents": true,
+        "allCommands": "",
+        "allFormats": "",
+        "qos": 0,
+        "x": 130,
+        "y": 400,
+        "wires": [
+            [
+                "875ba009.2edeb",
+                "fc2bcb5d.f68658",
+                "f7ffdf19.2713b"
+            ]
+        ]
+    },
+    {
+        "id": "ecf69212.f95ad",
+        "type": "debug",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "x": 690,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "875ba009.2edeb",
+        "type": "function",
+        "z": "426b4678.aac5b8",
+        "name": "soil moisture",
+        "func": "msg.payload = msg.payload.d.objectTemp\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "ecf69212.f95ad",
+                "11bb5e6d.5caba2",
+                "287bacc3.b97304"
+            ]
+        ]
+    },
+    {
+        "id": "fc2bcb5d.f68658",
+        "type": "function",
+        "z": "426b4678.aac5b8",
+        "name": "Temperature",
+        "func": "msg.payload = msg.payload.d.temperature\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 410,
+        "y": 480,
+        "wires": [
+            [
+                "ecf69212.f95ad",
+                "44746ee3.f7bcb",
+                "992b2aa.0f7d9d8"
+            ]
+        ]
+    },
+    {
+        "id": "f7ffdf19.2713b",
+        "type": "function",
+        "z": "426b4678.aac5b8",
+        "name": "Humidity",
+        "func": "msg.payload = msg.payload.d.humidity\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 400,
+        "y": 580,
+        "wires": [
+            [
+                "ecf69212.f95ad",
+                "3442e2c3.e7ae8e",
+                "1abbc608.26a64a"
+            ]
+        ]
+    },
+    {
+        "id": "11bb5e6d.5caba2",
+        "type": "ui_gauge",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "6240558a.21d96c",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Moisture Gauge",
+        "label": "DC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 700,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "44746ee3.f7bcb",
+        "type": "ui_gauge",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "6240558a.21d96c",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temprature Gauge",
+        "label": "DC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 710,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3442e2c3.e7ae8e",
+        "type": "ui_gauge",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "6240558a.21d96c",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Humidity Gauge",
+        "label": "DC",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#186d18",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "x": 700,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "4df389d3.273be8",
+        "type": "ibmiot out",
+        "z": "426b4678.aac5b8",
+        "authentication": "apiKey",
+        "apiKey": "54a3f96c.f55828",
+        "outputType": "cmd",
+        "deviceId": "vss1234",
+        "deviceType": "vss1234",
+        "eventCommandType": "home",
+        "format": "json",
+        "data": "data",
+        "qos": 0,
+        "name": "IBM IoT",
+        "service": "registered",
+        "x": 680,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b5f6747.57c7388",
+        "type": "ui_button",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "8cc3f6d4.772218",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Motor On",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"command\":\"motoron\"}",
+        "payloadType": "json",
+        "topic": "",
+        "x": 240,
+        "y": 160,
+        "wires": [
+            [
+                "4df389d3.273be8",
+                "ecf69212.f95ad"
+            ]
+        ]
+    },
+    {
+        "id": "7af08cf.a177f74",
+        "type": "ui_button",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "8cc3f6d4.772218",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "Motor Off",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "icon": "",
+        "payload": "{\"command\":\"motoroff\"}",
+        "payloadType": "json",
+        "topic": "",
+        "x": 240,
+        "y": 240,
+        "wires": [
+            [
+                "4df389d3.273be8",
+                "ecf69212.f95ad"
+            ]
+        ]
+    },
+    {
+        "id": "b3addcbb.63c68",
+        "type": "http request",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": false,
+        "url": "http://api.openweathermap.org/data/2.5/weather?q=Pune,IN&appid=5caf4826770a6f752c8b6109a7381d66",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "authType": "",
+        "x": 350,
+        "y": 780,
+        "wires": [
+            [
+                "50f0a903.69dc48",
+                "a054670b.9fe928",
+                "3d0ecb1b.c6bab4",
+                "8ad37beb.af7c58"
+            ]
+        ]
+    },
+    {
+        "id": "50f0a903.69dc48",
+        "type": "debug",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 830,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "954f7af2.da24b8",
+        "type": "inject",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "x": 120,
+        "y": 780,
+        "wires": [
+            [
+                "b3addcbb.63c68"
+            ]
+        ]
+    },
+    {
+        "id": "a054670b.9fe928",
+        "type": "function",
+        "z": "426b4678.aac5b8",
+        "name": "API-Humidity",
+        "func": "msg.payload=msg.payload.main.humidity;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 570,
+        "y": 700,
+        "wires": [
+            [
+                "50f0a903.69dc48",
+                "d9de2d62.7a465"
+            ]
+        ]
+    },
+    {
+        "id": "3d0ecb1b.c6bab4",
+        "type": "function",
+        "z": "426b4678.aac5b8",
+        "name": "API-Temperature",
+        "func": "msg.payload=msg.payload.main.temp;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 840,
+        "wires": [
+            [
+                "50f0a903.69dc48",
+                "f3576810.7e6718"
+            ]
+        ]
+    },
+    {
+        "id": "d9de2d62.7a465",
+        "type": "ui_text",
+        "z": "426b4678.aac5b8",
+        "group": "5e5c14.cd04e3ec",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Humidity",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 820,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "f3576810.7e6718",
+        "type": "ui_text",
+        "z": "426b4678.aac5b8",
+        "group": "5e5c14.cd04e3ec",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperature",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 830,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "3b5e9ab3.541346",
+        "type": "ui_text",
+        "z": "426b4678.aac5b8",
+        "group": "5e5c14.cd04e3ec",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Soil Moisture",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 830,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "8ad37beb.af7c58",
+        "type": "function",
+        "z": "426b4678.aac5b8",
+        "name": "API-Soil Moisture",
+        "func": "msg.payload=msg.payload.main.grnd_level\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "x": 590,
+        "y": 960,
+        "wires": [
+            [
+                "50f0a903.69dc48",
+                "3b5e9ab3.541346"
+            ]
+        ]
+    },
+    {
+        "id": "992b2aa.0f7d9d8",
+        "type": "ui_chart",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "e82ab008.91898",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "label": "Temperature",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1abbc608.26a64a",
+        "type": "ui_chart",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "e82ab008.91898",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "label": "Humidity",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 680,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "287bacc3.b97304",
+        "type": "ui_chart",
+        "z": "426b4678.aac5b8",
+        "name": "",
+        "group": "e82ab008.91898",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "Soil Moisture",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 690,
+        "y": 320,
+        "wires": [
+            []
+        ]
+    }
+]
